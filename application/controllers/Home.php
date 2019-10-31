@@ -57,6 +57,16 @@
           $this->load->view('checkout');
         
        }
+     public function dash(){
+      $this->load->view('shop_header');
+      $this->load->view('dash');
+      $this->load->view('shop_footer');
+     }
+     public function add_products(){
+      $this->load->view('shop_header');
+      $this->load->view('add_products');
+     
+     }
 
       
       

@@ -15,28 +15,33 @@
 
                         <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
                             <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.html">Home</a>
+                                <li>
+                            <a class="nav-link" href="<?php echo base_url('Home/index'); ?>">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="about.html">About Us</a>
+                                <a class="nav-link" href="<?php echo base_url('Home/about'); ?>">About Us</a>
+                                    
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="sneakers.html">Sneakers</a>
+                                <a class="nav-link" href="<?php echo base_url('Home/sneakers'); ?>">Sneakers</a>
+                                   
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="official.html">Official Wear</a>
+                                <a class="nav-link" href="<?php echo base_url('Home/official'); ?>">Official</a>
+                                    
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="clothing.html">Clothing</a>
+                                <a class="nav-link" href="<?php echo base_url('Home/clothing'); ?>">Clothing</a>
+                                   
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="accessories.html">Accessories</a>
-                                </li>
+                                <a class="nav-link" href="<?php echo base_url('Home/accessories'); ?>">Accessories</a>
+                                    </li>
                                 
                               
                            
                             </ul>
+                            
                         </div>
                         <div class="hearer_icon d-flex">
                             <div class="dropdown cart">
@@ -92,7 +97,7 @@
                             <h3>Sign Up.
                                </h3>
                 
-                            <form class="row contact_form" action="<?php echo base_url('Home/account_validation'); ?> " method="post" novalidate="novalidate">
+                            <form class="row contact_form" action="<?php echo base_url('Main/insert_validation'); ?> " method="post" novalidate="novalidate">
                                
                                
                                 <div class="col-md-12 form-group p_star">
@@ -132,7 +137,7 @@
                                 </div>
 
                                 <div class="col-md-12 form-group p_star">
-                                <?php echo form_error('password_confirm'); ?>
+                                
                                     <input type="password" class="form-control" id="password_confirm" name="password_confirm" value="<?php echo   set_value('password_confirm'); ?>"
                                         placeholder="Confirm Password">
                                 </div>

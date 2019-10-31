@@ -96,7 +96,7 @@
                         <div class="login_part_form_iner">
                             <h3>Welcome Back !<br>
                                 Please Sign in now</h3>
-                            <form class="row contact_form" action="<?= base_url('auth/process_login')?>" method="post" novalidate="novalidate">
+                            <form class="row contact_form" action="<?= base_url('Main/loginValidation')?>" method="post" novalidate="novalidate">
                                 <div class="col-md-12 form-group p_star">
                                     <input type="email" class="form-control" id="email" name="email" value=""
                                         placeholder="Email">
