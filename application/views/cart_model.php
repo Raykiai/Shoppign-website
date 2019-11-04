@@ -32,7 +32,7 @@
           <td class="thumb">
              <img src="<?php echo base_url(); ?>/images/<?php echo $data['image'] ?>" height="400px" width="400px"  alt="<?php echo $data['id'] ?>">
           </td>
-          <td class="name"><?php echo $data['name'] ?></td>
+          <td class="name"><?php echo $data['product_name'] ?></td>
           <td class="price">Kshs
               <span class="price<?php echo $data['rowid'] ?>"><?php echo $data['price'] ?>
               </span>
